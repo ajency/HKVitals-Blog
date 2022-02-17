@@ -1,0 +1,178 @@
+/* fonts*/
+@font-face {
+    font-family: 'nexa-bold';
+    src: url('../fonts/nexa-bold.eot');
+    src: url('../fonts/nexa-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nexa-bold.woff') format('woff'),
+         url('../fonts/nexa-bold.ttf')  format('truetype'),
+         url('../fonts/nexa-bold.svg') format('svg');
+         	font-style: normal;
+            font-weight: normal;
+	        font-display:swap;
+}
+@font-face {
+    font-family: 'nexa-light';
+    src: url('../fonts/nexa-light.eot');
+    src: url('../fonts/nexa-light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nexa-light.woff') format('woff'),
+         url('../fonts/nexa-light.ttf')  format('truetype'),
+         url('../fonts/nexa-light.svg') format('svg');
+         	font-style: normal;
+            font-weight: normal;
+	        font-display:swap;
+}
+
+/* buttons */
+.tb-button{
+    &--border{
+        background-color: theme-color("gray-bg-1") !important;
+        /* border: 1px solid theme-color("primary") !important; */
+        color: theme-color("primary") !important;
+
+        &:hover{
+            background-color: theme-color("primary") !important;
+            color: #fff !important;
+        }
+    }
+}
+
+/* slick */
+.slick-dots{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 0;
+	li{
+		button{
+			background-color: theme-color("primary") !important;
+			outline:none !important;
+			font-size: 0;
+    		height: 8px;
+    		width: 8px;
+    		padding: 0;
+    		border-radius: 100%;
+			opacity: 20%;
+		}
+		&.slick-active{
+			button{
+				opacity: 100%;
+			}
+		}
+		&:not(:last-child){
+			margin-right: 6px;
+		}
+	}
+	@media(max-width:768px){
+		margin-top: 15px;
+		li{
+			button{
+				height: 6px;
+				width: 6px;
+			}
+			&:not(:last-child){
+				margin-right: 5px;
+			}
+		}
+	}
+}
+.slider-nav{
+    button{
+        &:hover, &:focus{
+            opacity: 100%;
+        }
+    }
+	.arrows{
+		display: flex;
+		align-items: center;
+		.dots{
+			.slick-dots{
+				margin:0;
+				li{
+					display: flex;
+    				align-items: center;
+					&:not(:last-child){
+						margin-right: 8px;
+					}
+				}
+			}
+		}
+		&__prev, &__next{
+			background-color: transparent;
+			padding: 0;
+    		border-radius: 100%;
+			outline: none;
+			transition: opacity 250ms ease-in, margin 250ms ease-in;
+			opacity:1;
+		}
+		&__prev{
+			margin-right: 15px;
+			svg{
+				transform: rotate(180deg);
+			}
+			&.slick-disabled{
+				margin-left: -46.113px;
+			}
+		}
+		&__next{
+			margin-left: 15px;
+		}
+		.slick-disabled{
+			visibility: hidden;
+			opacity: 0;
+		}
+	}
+	@media(max-width:1024px) and (min-width:991px){
+		
+	}
+	@media(max-width:768px){
+		bottom: -14px !important;
+    	padding: 0 !important;
+    	width: 100%;
+		padding: 0;
+		.arrows{
+			justify-content: center;
+		}
+	}
+}
+
+/* container */
+.smaller-container{
+	@media(min-width:1300px){
+		max-width: 1000px !important;
+		padding-left: 15.5px !important;
+		padding-right: 15.5px !important;
+	}
+}
+
+/* pagination */
+.pagination-nav{
+	display: flex;
+	justify-content: center;
+	.pagination{
+		margin: 30px 0 50px;
+		border-radius: 0;
+
+		.page-item{
+			.page-link{
+				border: none !important;
+				border-radius: 3px;
+				box-shadow: none !important;
+				background-color: theme-color("gray-bg-1");
+				color: theme-color("primary");
+				&:hover{
+					background-color: theme-color("primary");
+					color: #fff;
+				}
+			}
+			&.active{
+				.page-link{
+					background-color: theme-color("primary");
+					color: #fff;
+				}
+			}
+			&:not(:last-child){
+				margin-right: 10px;
+			}
+		}
+	}
+}

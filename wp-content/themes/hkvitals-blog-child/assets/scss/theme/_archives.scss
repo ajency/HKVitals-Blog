@@ -1,0 +1,10 @@
+.category, .tag, .search{
+    @media(max-width:768px){
+        .site-container{
+            margin-bottom: 10px;
+        }
+        .pagination-nav{
+            display: none;
+        }
+    }
+}

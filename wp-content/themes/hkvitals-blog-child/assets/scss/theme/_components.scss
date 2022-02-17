@@ -1,0 +1,121 @@
+.article-single{
+    width: 33.33%;
+    margin-bottom: 20px;
+    &:not(:nth-child(3n)){
+        padding-right: 20px;
+    }
+    .wraper{
+        border-radius: 10px;
+        border: 2px solid theme-color("gray-bg-1");
+        overflow: hidden;
+    }
+    &-image{
+        position: relative;
+        overflow: hidden;
+        a{
+            img{
+                height: 243px;
+                width: 100%;
+                object-fit: cover;
+                transition: transform $normal-speed ease-in-out;
+            }
+        }
+        .cat-detail{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            bottom: 10px;
+            padding: 0 20px;
+            color: #fff;
+            font-size: 18px !important;
+            line-height: 24px;
+
+            .dot{
+                padding: 0 6px;
+                font-size: 8px !important;
+            }
+        }
+    }
+    &-content{
+        padding: 10px 20px 25px;
+        &-title{
+            min-height: 53px;
+            .title{
+                margin-bottom: 0;
+                line-height: 25px !important;
+                a{
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: theme-color("primary");
+                    transition: all 250ms ease-in-out;
+                }
+            }
+        }
+        &-description{
+            font-size: 18px;
+            line-height: 25px;
+            margin: 10px 0 0;
+            color: theme-color("primary");
+            min-height: 50px;
+        }
+    }
+    &.hovered{
+        .article-single-image{
+            a{
+                img{
+                    transform:scale(1.1);
+                }
+            }
+        }
+        .article-single-content{
+            &-title{
+                .title{
+                    a{
+                        opacity:0.9;
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width:768px){
+        width: 100%;
+        margin-bottom: 10px;
+        &:not(:nth-child(3n)){
+            padding-right: 0px;
+        }
+        &-image{
+            a{
+                img{
+                    height: 222px;
+                }
+            }
+            .cat-detail{
+                font-size: 14px !important;
+                line-height: 21px;
+    
+                .dot{
+                    padding: 0 6px;
+                    font-size: 8px !important;
+                }
+            }
+        }
+        &-content{
+            padding-bottom: 10px;
+            &-title{
+                min-height: auto;
+                .title{
+                    line-height: 23px !important;
+                    a{
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                }
+            }
+            &-description{
+                font-size: 14px;
+                line-height: 22px;
+                min-height: auto;
+            }
+        }
+    }
+}
