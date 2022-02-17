@@ -1,0 +1,77 @@
+.author{
+    .single-post{
+        .single_post_page{
+            .single-post-content{
+                .entry-content{
+                    .author-details{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        &-avatar{
+                            height: 150px;
+                            border-radius: 100px;
+                            width: 150px;
+                            object-fit: cover;
+                        }
+                        &-designation{
+                            margin: 10px 0;
+                        }
+                        &-dname{
+                            margin: 5px 0 10px;
+                        }
+                        &-social-media{
+                            display: flex;
+                            align-items: center;
+                            .social-media-icons{
+                                line-height: 2;
+                                font-size: 20px;
+                                color:theme-color("primary");
+                                transition:opacity 250ms ease-in-out;
+
+                                &:hover{
+                                    opacity: 0.9;
+                                }
+
+                                &:not(:last-child){
+                                    padding-right:5px;
+                                }
+                                &:not(:first-child){
+                                    padding-left:5px;
+                                }
+                            }
+                        }
+                        &-bio{
+                            margin-top: 30px;
+                                font-size: 24px;
+                                line-height: 45px;
+                        }
+                        @media(max-width:768px){
+                            &-bio{
+                                margin-top: 20px;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                            }
+                        }
+                    }
+                }
+                .latest-articles{
+                    margin-bottom: 10px;
+                    .wraper{
+                        padding: 0;
+                    }
+                    &-container{
+                        display: flex;
+                        flex-wrap: wrap;
+                        .article-single{
+                            &-content{
+                                &-description{
+                                    min-height: 50px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
