@@ -8,7 +8,7 @@ a{
     }
 }
 body{
-    font-family: 'nexa-light';
+    font-family: 'Nunito Sans', sans-serif;
     @media(max-width:768px){
     position: relative;
     left: 0;
@@ -47,8 +47,8 @@ body{
     }
     /* buttons */
     .tb-button{
-        color: #fff;
-	    background-color: #393939;
+        color: #FFFFFF;
+	    background-color: #00A7B8;
         outline: none !important;
 		box-shadow: none !important;
         border:none;
@@ -63,8 +63,9 @@ body{
         align-items: center;
         justify-content: center;
 	    &:hover {
-		background-color: #595959;
-        border:none;
+		background-color: #ffff;
+        color: #00A7B8;
+        border: 1px solid #00A7B8;
 	    }
 	    &:focus {
 		background-color: #595959;
@@ -73,9 +74,9 @@ body{
         &--transparent{
             width: 120px;
             height: 38px;
-            background-color: rgba(242, 244, 248, 0.2);
+            background-color: rgba(0, 167, 184,0.2);
             &:hover{
-                background-color: rgba(242, 244, 248, 0.3);
+                background-color: rgba(0, 167, 184,0.3);
             }
         }
         @media(max-width:768px){
@@ -91,11 +92,11 @@ body{
     }
     /* headings */
     .section-heading{
-        font-family: 'nexa-bold';
+        font-family: 'Nunito Sans', sans-serif;
         font-size: 40px;
         line-height: 45px;
         letter-spacing: .64px;
-        color: #221e38;
+        color: #212121;
         margin-top: 80px;
         margin-bottom:40px;
         text-transform: capitalize;
@@ -143,7 +144,7 @@ body{
                                     padding: 0px 12px 0px 0px;
         
                                     &:hover{
-                                        color:#0cd3ff;
+                                        color: #00A7B8;
                                     }
                                 }
                             }
@@ -168,7 +169,7 @@ body{
                                         transition: color 250ms ease-in-out;
         
                                         &:hover{
-                                            color:#0cd3ff;
+                                            color:#00A7B8;
                                         }
                                     }
                                 }
@@ -205,10 +206,10 @@ body{
                     .search-toogle{
                         padding: 0 15px;
                         a{
-                            color:#393939;
+                            color:#616161;
 
                             &:hover{
-                                color:#0cd3ff;
+                                color:#00A7B8;
                             }
                         }
                     }
@@ -383,7 +384,7 @@ body{
                     }
                 }
                 .blog-title {
-                    font-family: 'nexa-bold';
+                    font-family: 'Nunito Sans', sans-serif;
                     font-size: 20px;
                     margin: 0;
                 }
@@ -598,3 +599,4 @@ body{
         margin-top: -7px !important;
     }
  }
+

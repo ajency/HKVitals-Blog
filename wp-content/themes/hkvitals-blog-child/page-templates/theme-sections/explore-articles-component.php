@@ -3,7 +3,7 @@
                         /* $hindi_cat = get_category_by_slug('hindi'); */
                         $post_ids = get_query_var('post_ids');
                         $args1 = array(
-                                'posts_per_page' => 6,
+                                'posts_per_page' => 3,
                                 'post_type' => array('post'),
                                 'post_status' => 'publish',
                                 'cat' => $_POST['category_id'],
@@ -39,7 +39,7 @@
                     );
                     $posts_in_cat = new wp_query( $args2 );
                     $total_post_in_cat = $posts_in_cat->found_posts;
-                    if($total_post_in_cat >= 7){?>
+                    if($total_post_in_cat >= 4){?>
                         <div class="action-btn text-center">
                             <a href="<?php echo get_category_link($_POST['category_id']); ?>" class="tb-button">View more</a>
                         </div>

@@ -242,7 +242,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'nexa-light';
+	font-family: 'Nunito Sans', sans-serif;
 	font-weight: 400;
 	line-height: 1.2;
 	margin: 0 0 20px;
@@ -1257,12 +1257,12 @@ figcaption,
 }
 
 .entry-content ul > li {
-	list-style-type: disc;
+	list-style-type: disc !important;
 }
 
 .entry-content ol ul > li,
 .entry-content ul ul > li {
-	list-style-type: circle;
+	list-style-type: circle !important;
 }
 
 .entry-content ol ol,
