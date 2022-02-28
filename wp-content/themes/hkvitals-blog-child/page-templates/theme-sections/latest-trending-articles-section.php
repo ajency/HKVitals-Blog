@@ -33,8 +33,8 @@
                                 <div class="content-title">
                                     <h2 class="title"><a title="<?php the_title(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                                 </div>
-                                <div class="content-description hide-desk"><?php echo tb_get_excerpt(230); ?></div>
-                                <div class="content-description hide-mob"><?php echo tb_get_excerpt(280); ?></div>
+                                <div class="content-description hide-desk"><?php echo tb_get_excerpt(165); ?></div>
+                                <div class="content-description hide-mob"><?php echo tb_get_excerpt(185); ?></div>
                                 <div class="w-100 action-btn hide-mob">
                                     <a href="<?php the_permalink(); ?>" class="tb-button">Read more</a>
                                 </div>

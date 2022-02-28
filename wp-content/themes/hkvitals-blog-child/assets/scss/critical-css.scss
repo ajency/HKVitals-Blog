@@ -68,14 +68,18 @@ body{
         border: 1px solid #00A7B8;
 	    }
 	    &:focus {
-		background-color: #595959;
-        border:none;
+        background-color: #ffff;
+        color: #00A7B8;
+        border: 1px solid #00A7B8;
 	    }
         &--transparent{
             width: 120px;
             height: 38px;
             background-color: rgba(0, 167, 184,0.2);
             &:hover{
+                background-color: rgba(0, 167, 184,0.3);
+            }
+            &:focus{
                 background-color: rgba(0, 167, 184,0.3);
             }
         }
@@ -165,7 +169,7 @@ body{
                                         font-weight: 400;
                                         line-height: 18px;
                                         letter-spacing: 0;
-                                        color: #393939;
+                                        color: #616161;
                                         transition: color 250ms ease-in-out;
         
                                         &:hover{
@@ -325,7 +329,7 @@ body{
                         &-container{
                             display: flex;
                             button{
-                                background:#393939;
+                                background:#00A7B8;
                             }
                         }
                     }

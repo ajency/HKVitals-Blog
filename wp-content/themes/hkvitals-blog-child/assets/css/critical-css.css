@@ -101,8 +101,9 @@ body .tb-button:hover {
 }
 
 body .tb-button:focus {
-  background-color: #595959;
-  border: none;
+  background-color: #ffff;
+  color: #00A7B8;
+  border: 1px solid #00A7B8;
 }
 
 body .tb-button--transparent {
@@ -112,6 +113,10 @@ body .tb-button--transparent {
 }
 
 body .tb-button--transparent:hover {
+  background-color: rgba(0, 167, 184, 0.3);
+}
+
+body .tb-button--transparent:focus {
   background-color: rgba(0, 167, 184, 0.3);
 }
 
@@ -215,7 +220,7 @@ body header.site-header .desktop-menu-container .tb-topbar .topbar-menu-right .m
   font-weight: 400;
   line-height: 18px;
   letter-spacing: 0;
-  color: #393939;
+  color: #616161;
   -webkit-transition: color 250ms ease-in-out;
   transition: color 250ms ease-in-out;
 }
@@ -405,7 +410,7 @@ body header.site-header .mobile-menu-container {
     display: flex;
   }
   body header.site-header .mobile-menu-container .wp-searchform-container button {
-    background: #393939;
+    background: #00A7B8;
   }
 }
 
