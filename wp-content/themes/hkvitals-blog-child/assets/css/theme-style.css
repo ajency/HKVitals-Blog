@@ -11201,7 +11201,7 @@
     font-weight: 400;
     line-height: 18px;
     letter-spacing: .32px;
-    color: #6e6e6e;
+    color: #616161;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -11253,11 +11253,11 @@
   .footer-widgets {
     border-top: none;
     padding: 42px 0 19.5px !important;
-    background-color: #f4f4f4;
+    background-color: #F5F5F5;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
-    color: #393939;
+    color: #616161;
   }
   
   .footer-widgets .wrap::before, .footer-widgets .wrap::after {
@@ -11281,7 +11281,7 @@
   }
   
   .footer-widgets .wrap.container .footer-widget-area.footer-widgets-1 {
-    width: 40%;
+    width: 35%;
   }
   
   .footer-widgets .wrap.container .footer-widget-area.footer-widgets-2, .footer-widgets .wrap.container .footer-widget-area.footer-widgets-3 {
@@ -11293,12 +11293,18 @@
   }
   
   .footer-widgets .wrap.container .footer-widget-area .widget-title {
-    font-family: 'nexa-bold';
-    color: #393939;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #616161;
     font-size: 16px;
     line-height: 19px;
     font-weight: 400;
     margin-bottom: 21px;
+  }
+
+  h4.widget-title {
+    font-family: 'Nunito Sans', sans-serif !important;
+    font-weight: 700 !important;
+    color: #212121 !important;
   }
   
   .footer-widgets .wrap.container .footer-widget-area .widget {
@@ -11306,7 +11312,7 @@
   }
   
   .footer-widgets .wrap.container .footer-widget-area .socials {
-    margin-top: 8px;
+    margin-top: 27px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -11336,7 +11342,7 @@
   }
   
   .footer-widgets .wrap.container .footer-widget-area a {
-    color: #393939;
+    color: #616161;
   }
   
   .footer-widgets .wrap.container .footer-widget-area .contact .wraper {
@@ -11348,6 +11354,10 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+
+  a.num, .mail {
+    color: #757575 !important;
+}
   
   .footer-widgets .wrap.container .footer-widget-area .news-letter {
     margin-top: 31px;
@@ -11545,7 +11555,7 @@
     padding: 10px 13px !important;
     background-color: #00A7B8 !important;
     cursor: pointer !important;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito Sans', sans-serif !important;
     font-size: 14px !important;
     line-height: 18px !important;
     letter-spacing: .16px;
@@ -11556,7 +11566,7 @@
   
   .footer-form .frm_fields_container .frm_submit {
     position: absolute;
-    right: 0;
+    right: 4px;
     top: 3px;
   }
   
@@ -11575,12 +11585,12 @@
   
   .breadcrumbs-wrapper .breadcrumbs-inside a {
     font-size: 14px;
-    color: #8d8d8d;
+    color: #616161;
     font-weight: 600;
   }
   
   .breadcrumbs-wrapper .breadcrumbs-inside a .fa-home {
-    color: #8d8d8d;
+    color: #616161;
     font-size: 15px;
   }
   
@@ -11604,7 +11614,7 @@
   }
   
   .breadcrumbs-wrapper .breadcrumbs-inside a:last-child {
-    color: #8d8d8d;
+    color: #616161;
   }
   
   .breadcrumbs-wrapper .breadcrumbs-inside a:last-child:after {
@@ -11613,7 +11623,7 @@
   
   .breadcrumbs-wrapper .breadcrumbs-inside .breadcrumb_last {
     font-size: 14px;
-    color: #8d8d8d;
+    color: #616161;
     font-weight: 600;
   }
   
@@ -11654,17 +11664,17 @@
   
   .author-bar-top .author__content .author-name a, .author-bar-bottom .author__content .author-name a {
     font-size: 20px;
-    font-family: 'nexa-bold';
+    font-family: 'Nunito Sans', sans-serif;
     letter-spacing: 0.6px;
     text-transform: uppercase;
-    color: #393939 !important;
+    color: #161616 !important;
     -webkit-transition: color 250ms ease-in-out;
     transition: color 250ms ease-in-out;
   }
   
   @media (max-width: 768px) {
     .author-bar-top .author__content .author-name a, .author-bar-bottom .author__content .author-name a {
-      color: #393939 !important;
+      color: #161616 !important;
     }
   }
   
@@ -11680,6 +11690,7 @@
     font-size: 20px;
     line-height: 100%;
     color: #393939 !important;
+    text-transform: capitalize;
   }
   
   @media (max-width: 768px) {
@@ -11850,6 +11861,11 @@
     margin: 80px 0 40px;
     text-transform: lowercase;
   }
+
+  h1.entry-title {
+    color: #212121;
+    font-family: 'Nunito Sans', sans-serif !important;
+  }
   
   .single-post .single-post-wide .single_post_page header.entry-header .post-title .entry-title::first-letter {
     text-transform: capitalize;
@@ -11880,9 +11896,9 @@
   }
   
   .single-post .single-post-wide .single_post_page .single-post-content .entry-content a {
-    color: #221e38;
+    color: #393939;
     text-decoration: none;
-    font-family: 'nexa-bold';
+    font-family: 'Nunito Sans', sans-serif !important;
   }
   
   .single-post .single-post-wide .single_post_page .single-post-content .entry-content p:first-child {
