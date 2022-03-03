@@ -10590,7 +10590,7 @@
   
   /* buttons */
   .tb-button--border {
-    background-color: #f4f4f4 !important;
+    background-color: #F2FAFB !important;
     /* border: 1px solid theme-color("primary") !important; */
     color: #393939 !important;
   }
@@ -10682,6 +10682,7 @@
     -webkit-transition: opacity 250ms ease-in, margin 250ms ease-in;
     transition: opacity 250ms ease-in, margin 250ms ease-in;
     opacity: 1;
+    color: #00A7B8 !important;
   }
   
   .slider-nav .arrows__prev {
@@ -10901,7 +10902,7 @@
   
   /* latest and trending articles */
   .latest-articles-single {
-    background-color: #FAFAFA;
+    background-color: #F2FAFB;
   }
   
   .latest-articles-single-container {
@@ -10920,6 +10921,7 @@
   
   .latest-articles-single-image img {
     height: 100%;
+    width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -11046,6 +11048,10 @@
     background-color: #00A7B8 !important;
     color: #FFFFFF !important;
   }
+
+  button.tb-button.tb-button--border.category-buttons-single:hover {
+    border: none !important;
+}
   
   .explore-articles-container {
     position: relative;
@@ -11077,6 +11083,9 @@
     }
     .explore-articles .category-buttons .category-buttons-single {
       min-width: 171px;
+      height: auto !important;
+      padding-top: 5px !important;
+      padding-bottom: 5px !important;
     }
     .explore-articles .category-buttons .category-buttons-single:not(:last-child) {
       margin-right: 10.54px;
@@ -11092,7 +11101,7 @@
   }
   
   .more-articles-section .more-articles {
-    background-color: #FAFAFA;
+    background-color: #F2FAFB;
     position: relative;
   }
   
@@ -11523,14 +11532,14 @@
             box-shadow: none !important;
     outline: none !important;
     border-radius: 4px 0px 0px 4px;
-    border: 1px solid #c6c6c6;
+    border: 1px solid #E0E0E0 !important;
     padding: 11px 14px;
     font-size: 14px;
     line-height: 24px;
     color: #9E9E9E !important;
     font-family: 'Nunito Sans', sans-serif !important;
     height: 40px;
-    width: 186px;
+    width: 100%;
     margin-right: 95.91px;
   }
   
@@ -11566,7 +11575,7 @@
   
   .footer-form .frm_fields_container .frm_submit {
     position: absolute;
-    right: 4px;
+    right: 0;
     top: 3px;
   }
   
@@ -12130,10 +12139,11 @@
   .single-post .single-post-wide .single_post_page .latest-reads .section-title {
     font-size: 55px;
     line-height: 75px;
-    font-family: 'nexa-bold';
+    font-family: 'Nunito Sans', sans-serif;
     text-align: center;
     text-transform: capitalize;
     padding: 80px 0 33px;
+    color: #212121;
   }
   
   .single-post .single-post-wide .single_post_page .latest-reads .read-these-next {
@@ -12182,7 +12192,7 @@
   .single-post .single-post-wide .single_post_page .latest-reads .read-these-next .recent-post .single-post .next-articles .recent-post-header h2.title a {
     color: #ffffff;
     font-size: 20px !important;
-    font-family: 'nexa-bold';
+    font-family: 'Nunito Sans', sans-serif;
   }
   
   .single-post .single-post-wide .single_post_page .latest-reads .read-these-next .recent-post .single-post.hovered .gradient-overlay {
@@ -12224,7 +12234,7 @@
   }
   
   .subscribe-section {
-    background-color: #f4f4f4;
+    background-color: #F2FAFB;
     padding: 50px 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -12241,8 +12251,9 @@
   
   .subscribe-section .wrap .form-title {
     font-size: 40px;
-    font-family: 'nexa-bold';
+    font-family: 'Nunito Sans', sans-serif;
     margin-bottom: 11px;
+    color: #212121;
   }
   
   .subscribe-section .wrap p {
@@ -12274,14 +12285,14 @@
     width: 147px;
     padding: 11px;
     height: 40px;
-    background-color: #393939 !important;
+    background-color: #00A7B8 !important;
     color: #fff !important;
     text-transform: uppercase;
     font-size: 14px;
-    font-family: 'nexa-bold';
+    font-family: 'Nunito Sans', sans-serif;
     border: none !important;
     outline: none !important;
-    border-radius: 8px;
+    border-radius: 4px;
     position: absolute;
     right: 122px;
     top: 7.5px;
@@ -12302,8 +12313,19 @@
     padding: 0 20.24px;
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
-    font-family: 'nexa-light' !important;
+    font-family: 'Nunito Sans', sans-serif !important;
   }
+
+  .subscribe-section .subscribe-form-wide .frm_fields_container .frm_submit button:hover {
+    color: #00A7B8;
+    background: #FFFFFF;
+    border: #00A7B8;
+  }
+
+  /* input#field_mdwduae31e7a053 {
+    font-family: 'Nunito Sans', sans-serif !important;
+    color: #9E9E9E !important;
+  } */
   
   .subscribe-section .subscribe-form-wide .frm_fields_container .frm_error {
     position: absolute;

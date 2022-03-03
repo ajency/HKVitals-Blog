@@ -5,8 +5,9 @@ add_shortcode( 'read-these-next', function(){ ?>
 	<?php
 	$categories = get_the_category();
 	if ( ! empty( $categories ) ) {
-		$currentCat = $categories[0]->name;
+		$currentCat = $categories[0]->slug;
 	}
+	// echo $currentCat;
 	?>
 		<div class="read-these-next">
 			<?php

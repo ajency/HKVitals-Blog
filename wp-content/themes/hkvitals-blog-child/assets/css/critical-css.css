@@ -110,10 +110,11 @@ body .tb-button--transparent {
   width: 120px;
   height: 38px;
   background-color: rgba(0, 167, 184, 0.2);
+  border: none !important;
 }
 
 body .tb-button--transparent:hover {
-  background-color: rgba(0, 167, 184, 0.3);
+  background-color: #00A7B8;
 }
 
 body .tb-button--transparent:focus {
@@ -249,7 +250,7 @@ body header.site-header .desktop-menu-container .main-header .hamburger {
 }
 
 body header.site-header .desktop-menu-container .main-header .site-logo {
-  width: 163px;
+  width: auto;
 }
 
 body header.site-header .desktop-menu-container .main-header .site-logo .custom-logo-link {
