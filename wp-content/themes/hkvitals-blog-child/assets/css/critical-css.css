@@ -103,7 +103,6 @@ body .tb-button:hover {
 body .tb-button:focus {
   background-color: #ffff;
   color: #00A7B8;
-  border: 1px solid #00A7B8;
 }
 
 body .tb-button--transparent {
@@ -243,6 +242,7 @@ body header.site-header .desktop-menu-container .main-header {
           justify-content: space-between;
   padding: 25px 0;
   background: #fff;
+  padding-bottom: 5px;
 }
 
 body header.site-header .desktop-menu-container .main-header .hamburger {
@@ -250,11 +250,18 @@ body header.site-header .desktop-menu-container .main-header .hamburger {
 }
 
 body header.site-header .desktop-menu-container .main-header .site-logo {
-  width: auto;
+  width: 168px;
 }
 
 body header.site-header .desktop-menu-container .main-header .site-logo .custom-logo-link {
   aspect-ratio: auto;
+}
+
+@media (max-width: 768px) {
+  body header.site-header .desktop-menu-container .main-header .site-logo {
+    width: 163px;
+    height: 38.01px;
+  }
 }
 
 body header.site-header .desktop-menu-container .main-header .main-header-menu-right {

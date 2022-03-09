@@ -335,3 +335,11 @@ add_filter( 'get_custom_logo', 'sp_custom_logo_link' );
 function sp_custom_logo_link( $html ) {
 return str_replace( 'href="https://www.truebasics.com/blog_new/', 'href="https://www.truebasics.com/', $html );
 }
+
+
+
+// function blog_title_limit ($title){
+// 	$newtitle = substr ($title, 0, 50 ) . " ...";
+// 	return $newtitle;
+// 	}
+// 	add_filter('the_title','blog_title_limit', 10, 1);

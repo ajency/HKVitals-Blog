@@ -25,7 +25,7 @@
                         </div>
                         <div class="gradient-overlay"></div>
                         <div class="single-slide__content1">
-                            <h2 class="f-20 blog-title"><a title="<?php the_title(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                            <h2 class="f-20 blog-title"><a title="<?php the_title(); ?>" href="<?php the_permalink(); ?>"><?php echo wp_trim_words(get_the_title(),12); ?></a></h2>
                             <p class="blog-desc hide-mob"><?php echo tb_get_excerpt(100); ?></span>
                             <p class="blog-desc hide-desk"><?php echo tb_get_excerpt(100); ?></span>
                             <?php $categories = tb_get_category(get_the_ID());  ?>

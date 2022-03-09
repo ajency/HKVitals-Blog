@@ -70,7 +70,7 @@ body{
 	    &:focus {
         background-color: #ffff;
         color: #00A7B8;
-        border: 1px solid #00A7B8;
+        // border: 1px solid #00A7B8;
 	    }
         &--transparent{
             width: 120px;
@@ -189,13 +189,21 @@ body{
                     justify-content: space-between;
                     padding: 25px 0;
                     background: #fff;
+                    padding-bottom: 5px;
                     .hamburger{
                         display: none;
                     }
                     .site-logo{
-                        width: auto;
+                        width: 168px;
+                        // height: 36px;
                         .custom-logo-link{
                             aspect-ratio: auto;
+                        }
+                    }
+                    @media (max-width: 768px) {
+                        .site-logo {
+                            width: 163px;
+                            height: 38.01px;
                         }
                     }
                     .main-header-menu-right{
