@@ -3,7 +3,7 @@
                         /* $hindi_cat = get_category_by_slug('hindi'); */
                         $post_ids = get_query_var('post_ids');
                         $args1 = array(
-                                'posts_per_page' => 3,
+                                'posts_per_page' => 6,
                                 'post_type' => array('post'),
                                 'post_status' => 'publish',
                                 'cat' => $_POST['category_id'],

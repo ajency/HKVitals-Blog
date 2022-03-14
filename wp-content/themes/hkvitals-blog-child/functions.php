@@ -333,7 +333,7 @@ add_action( 'widgets_init', 'wpb_widgets_init' );
 
 add_filter( 'get_custom_logo', 'sp_custom_logo_link' );
 function sp_custom_logo_link( $html ) {
-return str_replace( 'href="https://www.truebasics.com/blog_new/', 'href="https://www.truebasics.com/', $html );
+return str_replace( 'href="https://hkvitalsblog.kinsta.cloud/', 'href="https://www.hkvitals.com/', $html );
 }
 
 

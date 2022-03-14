@@ -129,43 +129,43 @@ function get_category_posts(category_page, remove_posts = false){
 		'taxtype' : $(".category-list-view").data('taxtype'),
 		'search' : $(".category-list-view").data('search'),
 	};
-	// $.ajax({
-	// 	url : ajax_params.url,
-	// 	data:data,
-	// 	type:'POST',
-	// 	beforeSend: function( xhr ){
-	// 		$('.category-list-view .category-loader').addClass("d-flex").removeClass("d-none");
-	// 		setParam('page', category_page);
-	// 	},
-	// 	success:function(data){
-	// 		if(remove_posts){
-	// 			$(".recent-post:first")
-	// 			$(".category-list-view").html('');
-	// 			$(".category-loader").addClass("d-none").removeClass("d-block");
-	// 		}else{
-	// 			$(".category-filler").parent().remove();
-	// 			$(".category-loader").remove();
-	// 		}
+	$.ajax({
+		url : ajax_params.url,
+		data:data,
+		type:'POST',
+		beforeSend: function( xhr ){
+			$('.category-list-view .category-loader').addClass("d-flex").removeClass("d-none");
+			setParam('page', category_page);
+		},
+		success:function(data){
+			if(remove_posts){
+				$(".recent-post:first")
+				$(".category-list-view").html('');
+				$(".category-loader").addClass("d-none").removeClass("d-block");
+			}else{
+				$(".category-filler").parent().remove();
+				$(".category-loader").remove();
+			}
 			
-	// 		if( data ) {
-	// 			$('.category-list-view').append( data ); 
-	// 			canBeLoaded = true; 
-	// 			category_page++;
-	// 			if(remove_posts){
-	// 				$([document.documentElement, document.body]).animate({
-	// 			        scrollTop: $(".category-list-view").offset().top
-	// 			    }, 1000);
-	// 			}
-	// 		}
-	// 		/* single component */
-	// 		$(".article-single .article-single-image a").hover(function(){
-	// 			$(this).parents().eq(2).toggleClass("hovered");
-	// 		});
-	// 		$(".article-single .article-single-content .article-single-content-title .title a").hover(function(){
-	// 			$(this).parents().eq(4).toggleClass("hovered");
-	// 		});
-	// 	}
-	// });
+			if( data ) {
+				$('.category-list-view').append( data ); 
+				canBeLoaded = true; 
+				category_page++;
+				if(remove_posts){
+					$([document.documentElement, document.body]).animate({
+				        scrollTop: $(".category-list-view").offset().top
+				    }, 1000);
+				}
+			}
+			/* single component */
+			$(".article-single .article-single-image a").hover(function(){
+				$(this).parents().eq(2).toggleClass("hovered");
+			});
+			$(".article-single .article-single-content .article-single-content-title .title a").hover(function(){
+				$(this).parents().eq(4).toggleClass("hovered");
+			});
+		}
+	});
 }
 function setParam(param, mode = ''){
 	var url = new URL(location.href);
