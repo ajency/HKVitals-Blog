@@ -17,7 +17,7 @@
                     <?php
                         $cat_image = get_field('image', $category->taxonomy . '_' . $category->term_id );
                     ?>
-                    <img title="<?php echo $category->name; ?>" src="<?php echo $cat_image; ?>" alt="<?php echo $category->name; ?>"/>
+                    <img title="<?php echo $category->name; ?>" src="<?php echo $cat_image; ?>" alt="<?php echo $category->name; ?>" width="573" heigh="238" loading="lazy" />
                     <div class="gradient-overlay"></div>
                     <div class="top-categories-single-title"><?php echo $category->name; ?></div>
                 </a>
