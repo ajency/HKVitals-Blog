@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Genesis Framework.
  *
@@ -11,7 +12,7 @@
  * @link    https://my.studiopress.com/themes/genesis/
  */
 
-genesis_structural_wrap( 'site-inner', 'close' );
+genesis_structural_wrap('site-inner', 'close');
 genesis_markup(
 	[
 		'close'   => '</div>',
@@ -24,21 +25,21 @@ genesis_markup(
  *
  * @since 1.0.0
  */
-do_action( 'genesis_before_footer' );
+do_action('genesis_before_footer');
 
 /**
  * Fires to display the main footer content.
  *
  * @since 1.0.1
  */
-do_action( 'genesis_footer' );
+do_action('genesis_footer');
 
 /**
  * Fires immediately after the `genesis_footer` action hook, before the site container closing markup.
  *
  * @since 1.0.0
  */
-do_action( 'genesis_after_footer' );
+do_action('genesis_after_footer');
 
 genesis_markup(
 	[
@@ -52,7 +53,7 @@ genesis_markup(
  *
  * @since 1.0.0
  */
-do_action( 'genesis_after' );
+do_action('genesis_after');
 wp_footer(); // We need this for plugins.
 
 genesis_markup(
@@ -63,4 +64,73 @@ genesis_markup(
 );
 
 ?>
+<div class="disclaimer-modal__bg">
+	<div class="disclaimer-modal__container">
+		<span class="close">&times;</span>
+		<h1>Disclaimer</h1>
+		<p>All Healthkart products are manufactured at FSSAI approved manufacturing facilities and are not intended to diagnose, treat, cure, or prevent any disease. Please read product packaging carefully prior to purchase and use. The information/articles on HK Vitals (www.hkvitals.com or subdomains) is provided for informational purpose only and is not meant to substitute for the advice provided by your doctor or other healthcare professional. These statements are not ratified by any government agency and are for general guidance only.</p>
+	</div>
+</div>
+<style>
+	.disclaimer-modal__bg {
+		position: fixed;
+		inset: 0;
+		background-color: rgba(0, 0, 0, .4);
+		z-index: 10000;
+		display: none;
+	}
+
+	.disclaimer-modal__container span {
+		top: 16px;
+		right: 16px;
+		position: absolute;
+		cursor: pointer;
+	}
+
+	.disclaimer-modal__container {
+		width: 530px;
+		height: 325px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: #fff;
+		border: 1px solid #ebebeb;
+		box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+		padding: 24px 57px 24px 20px;
+	}
+
+	@media(max-width: 768px) {
+		.disclaimer-modal__container {
+			width: 355px;
+			height: 459px;
+		}
+	}
+
+
+
+	#disclaimerID {
+		cursor: pointer;
+	}
+
+	.disclaimer-modal__container h1 {
+		font-family: 'Nunito Sans', sans-serif;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 18px;
+		letter-spacing: 0;
+		color: #757575;
+		margin-bottom: 18px;
+	}
+
+	.disclaimer-modal__container p {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 27px;
+		letter-spacing: 0;
+		margin: 0;
+	}
+</style>
+
+
 </html>
