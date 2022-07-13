@@ -14,6 +14,7 @@ add_shortcode( 'read-these-next', function(){ ?>
 				$args = array(
 					'posts_per_page' => 6,
 					'post_type' => 'post',
+					'orderby'   => 'rand',
 					'category_name' => $currentCat,
 					'post__not_in'   => array( get_the_ID() ),
 					'no_found_rows'  => true, 
